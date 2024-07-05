@@ -69,7 +69,7 @@ def isEvenBitwise(n):
 def run_test(method_name, statement, setup, runs = 10):
     times = [timeit.timeit(statement, setup=setup) for _ in range(runs)]
     mean_time = sum(times) / len(times)
-    print(f"{method_name} среднее время: {mean_time}")
+    print(f"{method_name} среднее время, с: {mean_time}")
 
 print("Большое число:")
 run_test("isEven", 'isEven(380_247_238_074)', 'from __main__ import isEven')
